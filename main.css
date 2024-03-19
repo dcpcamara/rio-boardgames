@@ -58,7 +58,7 @@ section .container { /* usamos somente o container dentro do header */
 
 /* customizando as imagens das marcas */
 .brands-list img { /* somente as imagens */
-    height: 24px;
+    height: 48px;
 }
 
 .brands-list li {
