@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio Boardgames Shop - Sua loja de boardgames</title>
+    <link rel="stylesheet" href="./main.css">
+    <!-- https://fonts.google.com/ usamos o site para pegar as fontes abaixo -->
+    <!-- parte do código vem no head do html, para aí sim usarmos a regra css corretamente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- criando o cabeçalho -->
+    <header>
+        <!-- criando um container para poder estilizar o cabeçalho, como posicionar título, menu, etc-->
+        <div class="container">
+            <h1>Rio Boardgames Shop</h1>
+        <!-- criando um menu com links -->
+        <nav>
+            <!-- lista não ordenada -->
+            <ul>
+                <!-- tag de lista -->
+                <li>
+                    <a href="#about">Sobre a Rio Boardgames Shop</a> <!-- referenciando o link para o id da section correspondente-->
+                </li>
+                <li>
+                    <a href="#contact">Entre em contato</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <!-- criando a seção "Sobre" da página-->
+    <section id="about">
+        <div class="container">
+            <!-- criamos uma classe específica na imagem da loja para poder editar somente ela -->
+            <img class="store-front" src="./images/loja.jpg" alt="Fachada da loja Rio Boardgames Shop">
+            <!-- criando um container com o texto sobre a loja -->
+            <div>
+                <h2>Sobre a loja</h2>
+                <!-- para preencher algum texto, usamos o comando lorem -->
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illum ab aspernatur ratione, cupiditate deleniti accusantium maxime quod ducimus! Magnam nihil non est voluptatum ea quidem dicta dolorem, incidunt modi.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illum ab aspernatur ratione, cupiditate deleniti accusantium maxime quod ducimus! Magnam nihil non est voluptatum ea quidem dicta dolorem, incidunt modi.
+                </p>
+                <!-- inserindo logos das cias com as quais trabalhamos; lista não ordenada -->
+                <ul class="brands-list"> <!-- criando uma classe para podermos customizar no css -->
+                    <li>
+                        <img src="./images/nintendo.png" alt="Nintendo">
+                    </li>
+                    <li>
+                        <img src="./images/playstation.png" alt="Playstation">
+                    </li>
+                    <li>
+                        <img src="./images/xbox.png" alt="Xbox">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- criando a seção "Contato" da página-->
+    <section id="contact"> <!-- criando um id para sobrescrever as regras no CSS e estilizar melhor -->
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contact-methods">
+                <!-- Criando formulário para envio de sugestões-->
+                <div>
+                    <h3>Fale conosco</h3>
+                    <form>
+                        <input type="text" placeholder="Seu nome" required/> <!-- campo obrigatório -->
+                        <input type="email" placeholder="Seu email" required/>
+                        <input type="tel" placeholder="Seu telefone (opcional)" />
+                        <textarea placeholder="Sua mensagem" rows="10" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <!-- Criando local para acessar os links das nossas redes sociais -->
+                <div>
+                    <h3>Nos acompanhe</h3>
+                    <ul class="social-media">
+                        <li>
+                            <a href="#" title="Siga-nos no Instagram">
+                                <img src="./images/instagram.png" alt="Logo Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Siga-nos no Facebook">
+                                <img src="./images/facebook.png" alt="Logo Facebook">
+                            </a> 
+                            </li>
+                        <li>
+                            <a href="#" title="Visite nosso canal no YouTube">
+                                <img src="./images/youtube.png" alt="Logo YouTube">
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Venha nos visitar</h3>
+                    <p>
+                        Rua do Brasil 123, Vila das Palmeiras - Rio de Janeiro, RJ
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- criando o rodapé da página-->
+    <footer>
+        <div class="container">
+            <p>
+                &copy; Rio Boardgames Shop - todos os direitos reservados - 2024
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
